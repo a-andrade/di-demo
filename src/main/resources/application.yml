@@ -1,0 +1,5 @@
+com:
+  jms:
+    username: JMS Username
+    password: somepassword
+    dburl: okaasan

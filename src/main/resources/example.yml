@@ -7,15 +7,15 @@
 name: John
 
 names: # comment
-    - John
-    - Paul
-    - Ringo
+  - John
+  - Paul
+  - Ringo
 
 pound_sign: "#"
 
 book:
-    author: Joe Buck
-    publisher: Midnight Cowboy
+  author: Joe Buck
+  publisher: Midnight Cowboy
 
 truth: yes
 
@@ -28,12 +28,12 @@ false: no # No, FALSE, false
 string_val: "This is it's quote"
 
 include_new_line: |
-    fsgfg asg as
-    sdgfsdg sdg sd gsd g
-    sdgsdg sdgdg
+  fsgfg asg as
+  sdgfsdg sdg sd gsd g
+  sdgsdg sdgdg
 
 ignore_new_lines: >
-    this is
-    just
-    one long string
+  this is
+  just
+  one long string
 
