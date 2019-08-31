@@ -14,16 +14,16 @@ import org.springframework.core.env.Environment;
 @Configuration
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
 // spring 4 annotation
-@PropertySources({
+/*@PropertySources({
         @PropertySource("classpath:datasource.properties"),
         @PropertySource("classpath:jms.properties")
-})
+})*/
 public class PropertyConfig {
 
     // environment variable override
     // useful in cases like not wanting to store passwords in a file
-    @Autowired
-    Environment environment;
+    //@Autowired
+    //Environment environment;
 
     @Value("${com.username}")
     private String username;
@@ -46,8 +46,8 @@ public class PropertyConfig {
     @Bean
     public FakeDataSource fakeDataSource() {
         FakeDataSource fakeDataSource = new FakeDataSource();
-        //fakeDataSource.setUser(username);
-        fakeDataSource.setUser(environment.getProperty("USERNAME")); // environment variable override
+        fakeDataSource.setUser(username);
+        //fakeDataSource.setUser(environment.getProperty("USERNAME")); // environment variable override
         fakeDataSource.setPassword(password);
         fakeDataSource.setDburl(dburl);
         return fakeDataSource;
@@ -63,10 +63,10 @@ public class PropertyConfig {
     }
 
     // going to be reading the file for us.
-    @Bean
+    /*@Bean
     public static PropertySourcesPlaceholderConfigurer properties() {
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
-    }
+    }*/
 
 }
