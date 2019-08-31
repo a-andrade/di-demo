@@ -3,3 +3,10 @@ com:
     username: JMS Username
     password: somepassword
     dburl: okaasan
+
+--- # file separator
+spring:
+  profiles: jp
+com:
+  jms:
+    username: JMS Username~~IN~~JAPANESE
