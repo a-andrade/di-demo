@@ -1,0 +1,39 @@
+# this is a comment
+
+# yaml = Yet Another Markup Language
+
+# yaml is used to describe data structures
+
+name: John
+
+names: # comment
+    - John
+    - Paul
+    - Ringo
+
+pound_sign: "#"
+
+book:
+    author: Joe Buck
+    publisher: Midnight Cowboy
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no # No, FALSE, false
+
+string_val: "This is it's quote"
+
+include_new_line: |
+    fsgfg asg as
+    sdgfsdg sdg sd gsd g
+    sdgsdg sdgdg
+
+ignore_new_lines: >
+    this is
+    just
+    one long string
+
